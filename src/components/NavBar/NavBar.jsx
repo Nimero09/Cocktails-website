@@ -10,7 +10,7 @@ export const NavBar = () => {
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/010/626/347/small/cocktail-club-night-logo-creative-cocktail-bar-logo-design-template-vector.jpg" alt="" />
             </section>
             <section>
-                <ul className='flex'>
+                <ul className='flex text-lg font-bold'>
                     <li>Home</li>
                     <li>Home</li>
                     <li>Home</li>
