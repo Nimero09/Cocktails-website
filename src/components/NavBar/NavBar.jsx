@@ -7,7 +7,9 @@ export const NavBar = () => {
     <header>
         <nav className='w-[90%] m-auto flex items-center justify-between px-10'>
             <section>
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/010/626/347/small/cocktail-club-night-logo-creative-cocktail-bar-logo-design-template-vector.jpg" alt="" />
+                <NavLink to={'/'}>
+                    <img className='cursor-pointer' src="https://static.vecteezy.com/system/resources/thumbnails/010/626/347/small/cocktail-club-night-logo-creative-cocktail-bar-logo-design-template-vector.jpg" alt="" />   
+                </NavLink>
             </section>
             <section>
                 <ul className='flex text-lg font-bold'>
@@ -15,7 +17,7 @@ export const NavBar = () => {
                         <NavLink to={'/'}>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/'}>Home</NavLink>
+                        <NavLink to={'/drinks'}>Drinks</NavLink>
                     </li>
                     <li>
                         <NavLink to={'/'}>Home</NavLink>
