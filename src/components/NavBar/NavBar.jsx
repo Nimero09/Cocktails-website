@@ -11,10 +11,18 @@ export const NavBar = () => {
             </section>
             <section>
                 <ul className='flex text-lg font-bold'>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <li>
+                        <NavLink to={'/'}>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/'}>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/'}>Home</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to={'/'}>Home</NavLink>
+                    </li>
                 </ul>
             </section>
         </nav>
