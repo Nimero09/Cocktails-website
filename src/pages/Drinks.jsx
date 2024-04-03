@@ -11,14 +11,16 @@ export const Drinks = () => {
                 console.log(products);
             })
             .catch(err => console.log(err));
+            // eslint-disable-next-line
     }, [])
+    
 
   return (
     <section className='px-10 mx-auto max-w-[1200px] w-100 pb-20'>
         <h1 className='text-center mb-10 font-bold text-3xl'>DRINKS</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
-            {products.map(product => {
-                return <section className='card' key={product.idDrink}>
+            {products.map(product => (
+                <section className='card' key={product.idDrink}>
                     <img src={product.strDrinkThumb} alt="" />
                     <div className='p-5 flex justify-between items-center'>
                         <section>
@@ -30,7 +32,7 @@ export const Drinks = () => {
                         </section>
                     </div>
                 </section>
-            })}
+            ))}
         </div>
     </section>
   )
