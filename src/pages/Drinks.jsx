@@ -4,6 +4,7 @@ const url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=`
 
 export const Drinks = () => {
     const [products, setProducts] = useState([]);
+    
     useEffect(() => {
         fetch(url)
             .then(res => res.json())

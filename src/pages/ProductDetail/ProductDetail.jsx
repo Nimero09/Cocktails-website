@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { React, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import './ProductDetail.css'
 const url = `https://thecocktaildb.com/api/json/v1/1/lookup.php?i=`
