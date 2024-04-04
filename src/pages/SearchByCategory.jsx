@@ -27,16 +27,16 @@ export const SearchByCategory = () => {
 
   return (
     <>
-    <section className='px-10 w-[90%] mx-auto mb-10 flex gap-5 flex-wrap'>
-        {categories.map(x => (
-            <button onClick={() => getCategory(x.strCategory)} className='bg-blue-700 text-white px-8 py-4 hover:bg-blue-900 rounded-md' key={x.strCategory}>
-                {x.strCategory}
-            </button>
-        ))}
-    </section>
-    {products.length !== 0 ? 
-        <section className='px-10 mx-auto max-w-[1200px] w-100 pb-20'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+    <section className='px-10 max-w-[90%] mx-auto'>
+        <section className='justify-center mb-10 flex gap-5 flex-wrap'>
+            {categories.map(x => (
+                <button onClick={() => getCategory(x.strCategory)} className='bg-blue-700 text-white px-6 py-4 hover:bg-blue-900 rounded-md' key={x.strCategory}>
+                    {x.strCategory}
+                </button>
+            ))}
+        </section>
+        {products.length !== 0 ? 
+        <div className='max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
             {products.map(product => (
                 <section className='card' key={product.idDrink}>
                     <img src={product.strDrinkThumb} alt="" />
@@ -53,8 +53,8 @@ export const SearchByCategory = () => {
                 </section>
             ))}
         </div>
-    </section> 
-        : null}
+        : null}       
+    </section>
     </>
   )
 }

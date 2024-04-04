@@ -23,7 +23,7 @@ export const NavBar = () => {
                         <NavLink to={'/search'}>Search</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/'}>Home</NavLink>
+                        <NavLink to={'/random'}>Random</NavLink>
                     </li>
                 </ul>
             </section>
