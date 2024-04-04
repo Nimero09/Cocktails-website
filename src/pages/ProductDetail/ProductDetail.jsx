@@ -20,12 +20,12 @@ export const ProductDetail = () => {
   let ingredients = (Object.keys(product)).filter(x => x.includes('strIngredient')).filter(x => product[x] != null);
 
   return (
-    <section className='px-10 w-[90%] mx-auto px-10pb-20'>
-      <div className='flex gap-10 items-center'>
-        <section>
+    <section className='px-10 max-w-[1500px] mx-auto px-10pb-20'>
+      <div className='flex gap-10 items-center justify-center'>
+        <section className='flex-1'>
           <img className='rounded-lg' src={product.strDrinkThumb} alt="" />
         </section>
-        <section>
+        <section className='flex-1'>
           <div>
             <h3>Name</h3>
             <span>{product.strDrink}</span>

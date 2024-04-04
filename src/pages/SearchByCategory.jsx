@@ -16,7 +16,7 @@ export const SearchByCategory = () => {
     // eslint-disable-next-line
   }, [])
 
-  let getCategory = (categorySelected) => {
+  const getCategory = (categorySelected) => {
     fetch(`https://thecocktaildb.com/api/json/v1/1/filter.php?c=${categorySelected}`)
         .then(res => res.json())
         .then(data => {
@@ -43,7 +43,6 @@ export const SearchByCategory = () => {
                     <div className='mb-0 p-5 gap-5 flex justify-between items-center'>
                         <section className='flex-1'>
                             <h2 className='font-bold text-xl'>{product.strDrink}</h2>
-                            <span className='font-light text-md'>{product.strCategory}</span>
                         </section>
                         <section className='flex-2'>
                             <Link to={`/drinks/${product.idDrink}`}>
