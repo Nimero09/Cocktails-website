@@ -1,9 +1,9 @@
-li {
+nav li {
     margin-right: 40px;
     cursor: pointer;
     font-size: 1.2em;
 }
 
-li:hover {
+nav li:hover {
     color: rgb(29 78 216);
 }

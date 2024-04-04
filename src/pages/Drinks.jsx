@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 const url = `https://thecocktaildb.com/api/json/v1/1/search.php?s=`
 
 export const Drinks = () => {
@@ -28,7 +29,9 @@ export const Drinks = () => {
                             <span className='font-semibold text-lg'>{product.strCategory}</span>
                         </section>
                         <section>
-                            <button className='px-4 py-4 rounded-md text-white bg-blue-700 border-blue-700 hover:bg-blue-900'>VIEW DETAILS</button>
+                            <Link to={`/drinks/${product.idDrink}`}>
+                                <button className='px-4 py-4 rounded-md text-white bg-blue-700 border-blue-700 hover:bg-blue-900'>VIEW DETAILS</button>
+                            </Link>
                         </section>
                     </div>
                 </section>

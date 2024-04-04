@@ -1,5 +1,5 @@
-import React from 'react'
 import cocktail from '../assets/img/cocktail.jpg'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const Home = () => {
