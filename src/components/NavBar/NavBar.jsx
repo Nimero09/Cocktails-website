@@ -1,14 +1,15 @@
 import React from 'react'
 import './NavBar.css'
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../../assets/img/cocktail-logo.png'
 
 export const NavBar = () => {
   return (
-    <header>
+    <header className='mb-10'>
         <nav className='w-[90%] m-auto flex items-center justify-between px-10'>
             <section>
                 <Link to={'/'}>
-                    <img className='cursor-pointer' src="https://static.vecteezy.com/system/resources/thumbnails/010/626/347/small/cocktail-club-night-logo-creative-cocktail-bar-logo-design-template-vector.jpg" alt="" />   
+                    <img className='cursor-pointer w-40' src={logo} alt="" />   
                 </Link>
             </section>
             <section>
